@@ -10,6 +10,13 @@
     "title": "404 - Page Not Found",
     "message": "The page you are looking for doesn't exist.",
     "backHome": "Go Back Home"
+  },
+  "navigation": {
+    "home": "Home"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "description": "Reviews are a great way to get feedback on your work."
   }
 }
 
