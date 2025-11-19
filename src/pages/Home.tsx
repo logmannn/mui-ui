@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
-function Home() {
+export function Home() {
   const { t } = useTranslation();
 
   return (
@@ -12,5 +12,3 @@ function Home() {
     </Box>
   );
 }
-
-export default Home;

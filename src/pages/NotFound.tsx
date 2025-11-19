@@ -12,7 +12,7 @@ const CenteredBox = styled(Box)`
   min-height: 60vh;
 `;
 
-function NotFound() {
+export function NotFound() {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
@@ -60,5 +60,3 @@ function NotFound() {
     </CenteredBox>
   );
 }
-
-export default NotFound;
