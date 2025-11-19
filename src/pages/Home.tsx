@@ -1,13 +1,14 @@
 import { Box, Typography } from "@mui/material";
-// import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
-// import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Home() {
-  // const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <Box>
-      <Typography variant="h1">Hello world</Typography>
+      <Typography variant="h2" gutterBottom>
+        {t("home.title")}
+      </Typography>
     </Box>
   );
 }

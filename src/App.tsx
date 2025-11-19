@@ -2,15 +2,13 @@ import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter } from "react-router-dom";
 import { theme } from "./theme";
 import AppRoutes from "./routes";
-import Layout from "./components/Layout";
+import "./i18n/config";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <Layout>
-          <AppRoutes />
-        </Layout>
+        <AppRoutes />
       </BrowserRouter>
     </ThemeProvider>
   );

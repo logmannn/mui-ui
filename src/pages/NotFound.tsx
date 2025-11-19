@@ -2,6 +2,7 @@ import { Box, Typography, Button, Paper } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const CenteredBox = styled(Box)`
   display: flex;
@@ -13,6 +14,7 @@ const CenteredBox = styled(Box)`
 
 function NotFound() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <CenteredBox>
@@ -36,7 +38,7 @@ function NotFound() {
           404
         </Typography>
         <Typography variant="h5" gutterBottom color="text.secondary">
-          Page Not Found
+          {t("notFound.title")}
         </Typography>
         <Typography
           variant="body1"
@@ -44,7 +46,7 @@ function NotFound() {
           color="text.secondary"
           sx={{ mt: 2 }}
         >
-          The page you're looking for doesn't exist or has been moved.
+          {t("notFound.message")}
         </Typography>
         <Button
           variant="contained"
@@ -52,7 +54,7 @@ function NotFound() {
           onClick={() => navigate("/")}
           sx={{ mt: 2, px: 4 }}
         >
-          Go Home
+          {t("notFound.backHome")}
         </Button>
       </Paper>
     </CenteredBox>

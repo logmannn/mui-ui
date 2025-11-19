@@ -1,0 +1,15 @@
+{
+  "common": {
+    "appName": "MUI App",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Hello world"
+  },
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "message": "The page you are looking for doesn't exist.",
+    "backHome": "Go Back Home"
+  }
+}
+
